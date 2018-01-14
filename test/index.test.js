@@ -37,23 +37,29 @@ test('str2bool:should false', t => {
 
 // not like boolean
 test('str2bool:should false', t => {
-	t.is(str2bool('true '), false);
+	const e = t.throws(() => {
+			str2bool('true ');
+	}, Error);
+
+	t.is(e.message, 'parameter must be like a boolean data.');
 });
 
 test('str2bool:should false', t => {
-	t.is(str2bool(223), false);
+	const e = t.throws(() => {
+		str2bool('123');
+	}, Error);
+	t.is(e.message, 'parameter must be like a boolean data.');
 });
 
 test('str2bool:should false', t => {
-	t.is(str2bool('223'), false);
-});
-
-test('str2bool:should false', t => {
-	t.is(str2bool(''), false);
-});
-test('str2bool:should false', t => {
-	t.is(str2bool(' '), false);
+	const e = t.throws(() => {
+		str2bool('');
+	}, Error);
+	t.is(e.message, 'parameter must be like a boolean data.');
 });
 test('str2bool:should false', t => {
-	t.is(str2bool(''), false);
+	const e = t.throws(() => {
+		str2bool(' ');
+	}, Error);
+	t.is(e.message, 'parameter must be like a boolean data.');
 });

@@ -4,7 +4,7 @@
   "description": "Converts a string or number like boolean to true / false of type boolean.",
   "main": "index.js",
   "scripts": {
-    "test": "nyc ava ./test/*.js"
+    "test": "./node_modules/ava/cli.js ./test/*.js"
   },
   "repository": {
     "type": "git",
