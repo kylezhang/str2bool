@@ -1,6 +1,6 @@
 {
   "name": "str2bool",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Converts a string or number like boolean to true / false of type boolean.",
   "main": "index.js",
   "scripts": {
