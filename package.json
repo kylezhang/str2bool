@@ -1,11 +1,19 @@
 {
   "name": "str2bool",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Converts a string or number like boolean to true / false of type boolean.",
   "main": "index.js",
   "scripts": {
     "test": "nyc ava ./test/*.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:kylezhang/str2bool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kylezhang/str2bool/issues"
+  },
+  "homepage": "https://github.com/kylezhang/str2bool",
   "keywords": [
     "string",
     "number",
