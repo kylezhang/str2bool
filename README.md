@@ -1,5 +1,16 @@
 # str2bool
-Converts a string or number like boolean to true / false of type boolean.
+Map data like boolean to true / false of type boolean
+
+| 类型和值 | 修改为 |
+| --- | --- |
+| "true" (String) | true(boolean) |
+| "false" (String) | false(boolean) |
+| true (boolean) | true(boolean) |
+| false (boolean) | false(boolean) |
+| "1" (String) | true(boolean) |
+| "0" (String) | false(boolean) |
+| 1 (int) | true(boolean) |
+| 0 (int) | false(boolean) |
 
 # install
 `npm install str2bool --save`
